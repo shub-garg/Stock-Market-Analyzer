@@ -1,6 +1,6 @@
-# flask-dashboard-template-2023
+# flask-dashboard-2023
 
-This is an example full stack web application built in Python with the [Flask](https://github.com/prof-rossetti/intro-to-python/blob/main/notes/python/packages/flask.md) framework. This application displays an interactive data dashboard of stock prices over time.
+This is an example full stack web application built in Python with the Flask framework. This application displays an interactive data dashboard of stock prices over time.
 
 ## Setup
 
