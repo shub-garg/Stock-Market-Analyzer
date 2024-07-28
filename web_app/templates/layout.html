@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5; /* Light grey background outside the app */
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #ffffff; /* White background inside the app */
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    nav {
+      text-align: center;
+      background-color: #003366; /* Dark blue background for the navigation */
+      color: #ffffff;
+      padding: 10px 0;
+      border-radius: 10px 10px 0 0;
+    }
+
+    nav h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background-color: #cccccc;
+      margin: 20px 0;
+    }
+
+    #content {
+      text-align: center;
+    }
+
+    h2 {
+      color: #003366; /* Dark blue color for headings */
+    }
+
+    form {
+      display: inline-block;
+      text-align: left;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border: 1px solid #dddddd;
+      border-radius: 8px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #28a745; /* Green color for the button */
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #003366; /* Dark blue background for the footer */
+      color: #ffffff;
+      border-top: 1px solid #cccccc;
+      border-radius: 0 0 10px 10px;
+    }
+
+    footer a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SITE NAVIGATION -->
+  <div class="container">
+    <nav>
+      <h1>Stock App</h1>
+    </nav>
+    <hr>
+
+    <!-- PAGE CONTENTS -->
+    <div id="content">
+
+      <h2>Stocks Form</h2>
+
+      <form action="/dashboard" method="POST">
+        <label>Stock:</label>
+        <select id="my-stock-selector" name="symbol">
+          <option value="MSFT" selected>Microsoft (MSFT)</option>
+          <option value="GOOG">Google (GOOGL)</option>
+          <option value="AAPL">Apple (AAPL)</option>
+          <option value="TSLA">Tesla (TSLA)</option>
+          <option value="AMZN">Amazon (AMZN)</option>
+          <option value="FB">Facebook (FB)</option>
+          <option value="NFLX">Netflix (NFLX)</option>
+          <option value="NVDA">NVIDIA (NVDA)</option>
+          <option value="INTC">Intel (INTC)</option>
+          <option value="AMD">AMD (AMD)</option>
+          <option value="IBM">IBM (IBM)</option>
+          <option value="ORCL">Oracle (ORCL)</option>
+          <option value="CSCO">Cisco (CSCO)</option>
+          <option value="ADBE">Adobe (ADBE)</option>
+        </select>
+        <br>
+
+        <button id="my-submit-btn">Go!</button>
+      </form>
+      {% block content %}
+      {% endblock %}
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <hr>
+      &copy; Copyright 2023 Shubham Garg |
+      <a href="https://github.com/shub-garg">Source</a>
+    </footer>
+  </div>
+
+</body>
+</html>
