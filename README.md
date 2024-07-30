@@ -2,6 +2,10 @@
 
 This is an example full stack web application built in Python with the Flask framework. This application displays an interactive data dashboard of stock prices over time.
 
+
+https://github.com/user-attachments/assets/9f07dac7-c6e0-4499-9077-f131f15ad14d
+
+
 ## Setup
 
 ### Prerequisites
